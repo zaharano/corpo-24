@@ -1,0 +1,56 @@
+/* @font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 100 1000;
+  font-display: swap;
+  src: url('fonts/SourceCodePro-VariableFont_wght.ttf') format('truetype')
+    tech('variations');
+} */
+
+/*     local('Source Code Pro Regular'), local('SourceCodePro-Regular') */
+
+/* @font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 100 1000;
+  font-display: swap;
+  src: url('fonts/Rubik-VariableFont_wght.ttf') format('truetype')
+    tech('variations');
+} */
+
+/* @font-face {
+  font-family: 'Rubik Mono One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('fonts/RubikMonoOne-Regular.ttf') format('truetype');
+} */
+
+/* local('Rubik Mono One'), local('RubikMonoOne-Regular'), */
+
+:root {
+  --text: hsl(177, 62%, 63%);
+  --highlight: hsla(177, 75%, 68%, 0.747);
+  --text-glow: 0px 0px 9px hsla(178, 49%, 52%, 0.8),
+    0px 0px 54px hsla(178, 49%, 52%, 1);
+  --box-glow: 0px 0px 20px hsla(178, 66%, 64%, 0.8),
+    0px 0px 60px hsla(178, 82%, 75%, 1);
+  --line-glow: 0px 0px 10px hsla(178, 49%, 52%, 0.4),
+    0px 0px 15px hsla(178, 49%, 52%, 0.2);
+
+  --inversion: hsl(180, 60%, 40%);
+
+  --primary-font: 'Source Code Pro', sans-serif;
+}
+
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}

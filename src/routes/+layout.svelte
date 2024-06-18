@@ -1,53 +1,48 @@
+
 <script>
-	import Header from './Header.svelte';
-	import './styles.css';
 </script>
 
-<div class="app">
-	<Header />
+<div class="app-container">
 
 	<main>
 		<slot />
 	</main>
 
 	<footer>
-		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
+		<span class="info">
+			Just the prologue for now while I write the rest!<br>
+			<a href="https://github.com/zaharano/corpo-svelte" target="_blank" rel="noopener noreferrer">Check out the repo</a>
+		</span>
 	</footer>
 </div>
 
 <style>
-	.app {
-		display: flex;
-		flex-direction: column;
-		min-height: 100vh;
-	}
+	.app-container {
+    background-color: #282c34;
+    /* background: rgb(4,13,12);
+    background: linear-gradient(180deg, rgba(4,13,12,1) 0%, rgba(2,51,40,1) 78%, rgba(0,36,29,1) 80%, rgba(3,92,80,1) 100%);     */
+    min-height: 98vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
 
-	main {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		padding: 1rem;
-		width: 100%;
-		max-width: 64rem;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
+  .info {
+		text-align: center;
+    font-size: .5em;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 2em;
+  }
 
-	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 12px;
-	}
+	.info a {
+    color: white;
+  }
 
-	footer a {
-		font-weight: bold;
-	}
-
-	@media (min-width: 480px) {
-		footer {
-			padding: 12px 0;
-		}
-	}
+	.info a:hover {
+    color: #8fe6e2;
+  }
 </style>
