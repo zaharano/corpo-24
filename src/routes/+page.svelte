@@ -13,14 +13,12 @@
 
   // Util
   import { onMount } from 'svelte';
-	import type { PageData, ActionData } from './$types';
+	import type { PageData } from './$types';
 
   // Stores
   import { inGame } from '$lib/stores/engineStores'
 
   export let data: PageData;
-
-  export let form: ActionData;  
 
   let loadingInterval;
   let loaded = false;
